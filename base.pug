@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title MyDance Academy
+    block scripts
+    block style
+  body
+    nav#navbar
+        ul
+          div#logo
+              img(src='../static/images/logo.png')
+              | MDA
+          li #[a(href="/#container") Home]
+          li #[a(href="/#mission") Services]
+          li #[a(href="/#sponsors") Sponsors]
+          li #[a(href="/") Contact]
+    block content
+    block foot
+        footer  
+            |Copyright &#169 Manan Shah
