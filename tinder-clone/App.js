@@ -1,4 +1,3 @@
-// import './App.css';
 import Header from './Header.js';
 import TinderCards from './TinderCards.js';
 import SwipeButtons from './SwipeButtons.js';
