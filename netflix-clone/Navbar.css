@@ -1,0 +1,26 @@
+.navbar{
+    height:30px;
+    display:flex;
+    /* justify-content:space-between; .when position fixed is used,this wont work  */
+    align-items:center;
+    padding:10px;
+    position:fixed;
+    width:100%;
+    transition:all 0.4s;
+    transition-timing-function: ease-in;
+}
+.nav100{
+    background-color:black;
+}
+.logo {
+    object-fit: contain;
+    height:20px;
+    left:10px;
+    position:fixed;
+}
+.avatar{
+    object-fit: contain;
+    height:20px;
+    right:10px;
+    position:fixed;
+}

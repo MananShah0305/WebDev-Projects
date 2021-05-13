@@ -1,0 +1,35 @@
+.row{
+    margin-left:20px;
+}
+.rowContent{
+    display:flex;
+    overflow-y: hidden;
+    overflow-x:scroll;
+    padding:20px;
+}
+/* The below 3 lines tell the browser that make the scrollbar disappear but keep its functionality intact */
+.rowContent::-webkit-scrollbar{
+    display:none;
+}
+.row_image{
+    object-fit: contain; /*used to maintain aspect ratio of the image*/
+    height:100px;
+    margin-right:10px;
+    transition:transform 400ms; /*if at all it changes its size,do it after 450ms*/
+}
+
+.row_image:hover{
+    /* Good way.Also,it changes size from all directions*/
+    transform: scale(1.08);
+    /* Bad way.Also,it changes size from one direction*/
+    /* height:180px;
+    width:2000px; */
+}
+
+.row_posterLarge{
+    height:240px;
+}
+.row_posterLarge:hover{
+    transform: scale(1.10);
+
+}
