@@ -1,7 +1,6 @@
 .navbar{
     height:30px;
     display:flex;
-    /* justify-content:space-between; .when position fixed is used,this wont work  */
     align-items:center;
     padding:10px;
     position:fixed;
