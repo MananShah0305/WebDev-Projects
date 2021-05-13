@@ -4,10 +4,6 @@
     padding:0px;
     scroll-behavior: smooth;
 }
-/* #container{
-    position:relative;
-    top:48px;
-} */
 #body{
     height:480px;
     display:flex;
