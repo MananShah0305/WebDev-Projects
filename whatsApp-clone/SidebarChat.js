@@ -19,7 +19,7 @@ function SidebarChat({ name, addNewChat, id }) {
     }, [id])
 
     const createNewChat = () => {
-        const roomName = prompt('Add new chat')//saves the value typed in the prompt
+        const roomName = prompt('Add new chat')
         if (roomName) {
             db.collection('Chat Room').add({
                 name: roomName,
