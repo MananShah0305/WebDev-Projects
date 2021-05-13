@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Banner></Banner>
-      {/* isLargeRow is not a pre-defined prop-name.you can have any other name like large,isLarge,isisLarge,etc. .Note that the default value of any attribute declared in the component is true */}
       <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals}  isLargeRow></Row>
       <Row title="Trending Now" fetchUrl={requests.fetchTrending}></Row>
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated}></Row>
