@@ -1,0 +1,49 @@
+.sidebar{
+    /* Width:35% is same as flex:0.35 */
+    display: flex;
+    flex:0.35;
+    flex-direction: column;
+    border-right: 1px solid rgb(214, 214, 214);
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding:8px 20px;
+    align-items: center;
+}
+
+.headerRight{
+    display:flex;
+    width:10vw;
+    justify-content: space-between;
+}
+
+.search{
+    background-color: rgb(238 238 238);
+    height:36px;
+    padding:10px;
+    display:flex;
+    align-items:center;
+}
+.searchContainer{
+    background-color: white;
+    height:32px;
+    display:flex;
+    align-items:center;
+    width:100%;
+    border:none;
+    border-radius: 16px;
+}
+.input{
+    border:none;
+    padding:4px; 
+    outline:none;
+    width:172%;
+}
+.sidebarChats{
+    overflow-y:scroll;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}

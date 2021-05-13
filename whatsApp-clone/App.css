@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400&family=Itim&display=swap');
+*{
+    font-family: 'Catamaran', sans-serif;
+}
+.app{
+  background-color: rgb(220, 220, 220);
+  height:100vh;
+  display:grid;
+  place-items: center;
+}
+.colorDiv{
+  background-color: teal;
+  height:28vh;
+  width:100%;
+  margin-top:-100px;
+}
+.appBody{
+  display:flex;
+  width:90vw;
+  height:90vh;
+  background-color:rgb(240, 240, 240);
+  margin-top:-200px;
+  box-shadow:-1px 4px 20px rgba(64, 64, 64,0.7)
+}
+
+.bgWhite{
+  background-color: white;
+}

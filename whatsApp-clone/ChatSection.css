@@ -1,0 +1,72 @@
+.chatSection{
+    flex:0.65;
+    display: flex;
+    flex-direction: column;
+}
+.chatHeader{
+    display:flex;
+    padding:8px 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+.chatHeaderInfo{
+    flex:1;
+    padding-left:16px;
+}
+.chatHeaderInfo h2{
+    font-size:18px;
+}
+.chatHeaderInfo div{
+    font-size:14px;
+}
+.chatBody{
+    background: url('https://res.cloudinary.com/practicaldev/image/fetch/s--WAKqnINn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/tw0nawnvo0zpgm5nx4fp.png') repeat;
+    flex:1;
+    overflow-y:scroll;
+    padding:20px;
+}
+.message{
+    background-color: white;
+    padding:6px 10px;
+    border-radius: 8px;
+    /* border-top-left-radius: 0px; */
+    width:fit-content;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.chatPerson{
+    font-size:14px;
+    padding-bottom: 4px;
+    color:rgb(6, 168, 218);
+    font-weight: bold;
+}
+.chatTimeStamp{
+    padding-left:32px;
+    font-size: x-small;
+    opacity:0.48;
+}
+.chatReceiver{
+    background-color: #c3f0b8;
+    margin-left:auto;
+}
+
+.chatFooter{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:4px 0px;
+}
+.chatFooter form{
+    flex:1;
+    padding-left:4px;
+    display:flex;
+    height:80%;
+}
+.chatFooter input{
+    border:0px solid grey;
+    width:100%;
+    border-radius:16px;
+    outline:none;
+    padding:6px 12px;
+}
