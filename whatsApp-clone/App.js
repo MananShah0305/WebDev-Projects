@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="app">
-      <div className={`colorDiv` /*${(user==null)&&`bgWhite`}*/}>
+      <div className={`colorDiv`}>
       </div>
       {!user ? (
         <Login></Login>
@@ -23,7 +23,7 @@ function App() {
                 <Route path="/rooms/:roomId">
                   <ChatSection /*tag='input'*/></ChatSection>
                 </Route>
-                <Route path='/'>  {/* Always use path='/' in the end */}
+                <Route path='/'> 
                   <ChatSection></ChatSection>
                 </Route>
               </Switch>
