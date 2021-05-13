@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import './ChatSection.css'
 import { Avatar, IconButton } from '@material-ui/core';
-import { /*SearchOutlined,*/AttachFile, MoreVert } from '@material-ui/icons';
+import { AttachFile, MoreVert } from '@material-ui/icons';
 import SendIcon from '@material-ui/icons/Send';
 import SearchIcon from '@material-ui/icons/Search';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
@@ -11,10 +11,7 @@ import db from './firebase'
 import firebase from 'firebase';
 import {useStateValue} from './StateProvider.js'
 
-function ChatSection(/*{tag:input}*/) {
-    // const iconChange=()=>{
-    //     !input.value?(<IconButton><MicIcon></MicIcon></IconButton>):(<IconButton><SendIcon></SendIcon></IconButton>)
-    // }
+function ChatSection() {
     const [input,setInput]=useState('')
     const {roomId}=useParams()
     const [roomName,setRoomName]=useState('')
@@ -54,7 +51,6 @@ function ChatSection(/*{tag:input}*/) {
                 </div>
                 <div className="chatHeaderOptions">
                     <IconButton>
-                        {/* <SearchOutlined></SearchOutlined> */}
                         <SearchIcon></SearchIcon>
                     </IconButton>
                     <IconButton>
@@ -79,7 +75,7 @@ function ChatSection(/*{tag:input}*/) {
                     <AttachFile></AttachFile>
                 </IconButton>
                 <form action="">
-                    <input value={input} onChange={(e)=>setInput(e.target.value)} type="text" className="chatMessageSend" placeholder='Type a message' /*onInput={iconChange}*//>
+                    <input value={input} onChange={(e)=>setInput(e.target.value)} type="text" className="chatMessageSend" placeholder='Type a message'/>
                 </form>
                 <IconButton onClick={sendMessage} className="send" type='submit'>
                     {input?( <SendIcon></SendIcon> ):(<MicIcon></MicIcon>)}
