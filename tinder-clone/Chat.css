@@ -1,0 +1,25 @@
+.chat{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+    height:40px;
+    border-bottom:2px solid rgb(236, 230, 230);
+}
+/* To style the LINK component,use a {} in css */
+a{
+    text-decoration: none;
+    color:inherit;/* color inherit means inheriting the color it had previously before converting the text into anchor tag*/
+}
+.dp{
+    margin-right:20px;
+}
+.details{
+    flex:1;
+}
+.details>p{
+    color:grey;
+}
+.timestamp{
+    color:lightgray
+}

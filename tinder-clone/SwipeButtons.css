@@ -1,0 +1,27 @@
+.swipeButtons{
+    position:fixed;
+    display:flex;
+    justify-content:space-evenly;
+    bottom:6vh;
+    width:100%;
+}
+.swipeButtons__repeat{
+    color:rgb(228, 207, 20) !important; /* !important here means to overwrite this color over any other color if mentioned */
+    box-shadow: 0px 4px 20px rgb(150, 150, 150);
+}
+.swipeButtons__left{
+    color:rgb(231, 28, 28) !important; /* !important here means to overwrite this color over any other color if mentioned */
+    box-shadow: 0px 4px 20px rgb(150, 150, 150);
+}
+.swipeButtons__star{
+    color:rgb(11, 135, 218) !important; /* !important here means to overwrite this color over any other color if mentioned */
+    box-shadow: 0px 4px 20px rgb(150, 150, 150);
+}
+.swipeButtons__right{
+    color:rgb(18, 236, 182) !important; /* !important here means to overwrite this color over any other color if mentioned */
+    box-shadow: 0px 4px 20px rgb(150, 150, 150);
+}
+.swipeButtons__lightning{
+    color:rgb(173, 10, 165) !important; /* !important here means to overwrite this color over any other color if mentioned */
+    box-shadow: 0px 4px 10px rgb(150, 150, 150);
+}

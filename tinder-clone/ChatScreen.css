@@ -1,0 +1,58 @@
+.title{
+    text-align:center;
+    padding:20px;
+    color:grey;
+}
+.chatScreen {
+    padding: 10px;
+}
+.MuiAvatar-root.MuiAvatar-circle.MuiAvatar-colorDefault {
+    margin-right: 10px !important;
+    color:white;
+    background-color: rgb(234, 20, 100)
+}
+
+.messages{
+    display:flex;
+    align-items: center;
+    padding-top:10px;
+}
+
+.chatMessageUser{
+    background-color: lightgray;
+    padding:10px;
+    border-radius:16px;
+    width: fit-content;
+
+}
+.chatMessageOwn{
+    background-color: rgb(13, 129, 224);
+    color:white;
+    padding:10px;
+    border-radius:16px;
+    margin-left: auto;
+    width: fit-content;
+     /*pushes it as right as possible*/
+}
+form{
+    display:flex;  /*we did display flex so that we could use flex:1 on the input tag*/
+    position:fixed;
+    bottom:0px;
+    height:32px;
+    width:100%;
+    padding:8px;
+    border-top:2px solid lightgray;
+}
+.input{
+    border:none;
+    flex:1;
+    padding:2px;
+    outline:none;
+}
+.btn{
+    border:none;
+    margin-right:20px;
+    background-color: white;
+    font-weight:bold;
+    color:rgb(212, 16, 75)
+}
