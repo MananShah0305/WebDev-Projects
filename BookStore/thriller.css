@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Bilbo+Swash+Caps&family=Kiwi+Maru:wght@400;500&family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=RocknRoll+One&family=Stardos+Stencil&family=Syne+Mono&family=Syne+Tactile&family=Train+One&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+}
+#containerThriller{
+    display:flex;
+    flex-direction:column;
+    margin-top: 40px;
+}
+.book{
+    display:flex;
+    flex-direction: row;
+    margin:10px;
+    justify-content:center;
+    align-items: center;
+}
+.book img{
+    height:200px;
+    width:140px;
+    padding:10px;
+}
+.book h1{
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-family: 'Aref Ruqaa', serif;
+}
+#desc{
+    display:flex;
+    flex-direction:column;
+}
+p{
+    font-size: 22px;
+    font-style:italic;
+    font-family: 'Syne Mono', monospace;
+}
+#desc .description{
+    font-size:16px;
+    font-family: 'Stardos Stencil', cursive;
+}
+.btn{
+    margin:8px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:white;
+    border:1px solid rgb(133, 29, 10);;
+    border-radius: 4px;
+    background-color:rgb(236, 54, 21);
+    display:inline-block;
+    align-self: center;
+    width:120px;
+    height:32px;
+    transition: all 0.2s;
+}
+.btn:hover{
+    transform: scale(1.04,1.04);
+}
+.price{
+    text-align:center;
+    padding:6px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+}
+hr  
+{  
+width: 80%;    
+margin-bottom: 7px;  
+margin-right: auto;  
+margin-left: auto;  
+margin-top: 9px;  
+border-width: 2px;  
+border-color:rgb(236, 54, 21);  
+}  
+#cart h1{
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+}
+#bookCart{
+    color:rgb(236, 54, 21);
+    text-align:center;
+    margin-top:24px;
+    font-size: 3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#titles{
+    display:grid;
+    grid-template-columns:2fr 1fr 2fr;
+    grid-column: span;
+}
+.box{
+    border:none;
+    margin:8px;
+    padding:8px;
+    text-align: center;
+}
+.box h1{
+    font-size: 1.6rem;
+    margin:10px 0px;
+    font-family: 'Orelega One', cursive;
+    color: rgb(236, 54, 21);
+}
+#total{
+    margin: 0px 84px 10px auto;
+    font-size: 32px;
+    color: rgb(236, 54, 21);
+    font-family: 'Orelega One', cursive;
+}
+

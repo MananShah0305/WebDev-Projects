@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=RocknRoll+One&family=Train+One&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+}
+/* #container{
+    position:relative;
+    top:48px;
+} */
+#body{
+    height:480px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Kiwi Maru', serif;
+    background:url("Images/bg2.jpg") no-repeat center center/cover;
+    color:white;
+}
+#body h1 {
+    font-size: 36px;
+    color: #e0dbdb;
+    text-shadow: 2px 2px 2px;
+}
+#body h2 {
+    font-size: 30px;
+    color: #e0dbdb;
+    text-shadow: 2px 2px 4px;
+}
+#categories h1{
+    font-family: 'Lato', sans-serif;
+    text-align:center;
+    margin: 10px;
+    margin-top:16px;
+    font-size:32px;
+}
+#library{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.books{
+    width:auto;
+    height:210px;
+    background-color: rgb(246, 240, 240);
+    border:none;
+    margin:16px 10px;
+    border-radius: 12px;
+    font-family: 'RocknRoll One', sans-serif;
+    transition-property: border;
+    box-shadow: 2px 2px rgb(224, 145, 131);
+    transition:all 0.4s;
+}
+.books:hover{
+    transform:scale(1.08,1.08);
+    border:4px solid rgb(236, 54, 21);
+    box-shadow: 3px 3px 4px rgb(236, 54, 21);
+    margin:10px;
+    font-family: 'RocknRoll One', sans-serif;
+}
+.books h3{
+    text-align:center;
+    margin:4px 0px;
+}
+.content{
+    margin:6px 10px;
+    padding:0px 4px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.content img{
+    height:160px;
+    width:100px;
+}
+.content .bookinfo{
+    padding:4px;
+    font-size:14px;
+}
+.content .bookinfo a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+.content .bookinfo a:hover{
+    text-decoration:underline;
+    color:red;
+}

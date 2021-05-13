@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyOnlineBookStore</title>
+    <link rel="stylesheet" href="store.css">
+</head>
+
+<body>
+    <div include-html="header.html"></div>
+        <section id="body">
+            <h1>Welcome to the Biggest Online Book Store</h1>
+            <h2>Eat Sleep Read Repeat</h2>
+        </section>
+        <section id="categories">
+            <h1>Book Categories</h1>
+            <div id="library">
+                <div class='books' id="genre-1">
+                    <h3>Thriller</h3>
+                    <div class='content'>
+                        <img src="Images/thriller.jpg" alt="ThrillerBook">
+                        <div class="bookinfo">
+                            <div>This genre consists of dark, engrossing, and suspenseful plot-driven stories.</div>
+                            <a href="./thriller.html">Click here to get best books of thriller genre. </a>
+                        </div>
+                    </div>
+                </div>
+                <div class='books' id="genre-2">
+                    <h3>Horror</h3>
+                    <div class='content'>
+                        <img src="Images/horror.jpg" alt="HorrorBook">
+                        <div class="bookinfo">
+                            <div>Horror is a genre of storytelling intended to scare, shock, and thrill its audience.
+                            </div>
+                            <a href="#categories">Click here to get best books of Horror genre.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='books' id="genre-3">
+                    <h3>Comedy</h3>
+                    <div class='content'>
+                        <img src="Images/Comedy.jpg" alt="ComedyBook">
+                        <div class="bookinfo">
+                            <div>Comedy genre has literary work that is written to amuse or entertain a reader.</div>
+                            <a href="#categories">Click here to get best books of Comedy genre.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='books' id="genre-4">
+                    <h3>Romantic</h3>
+                    <div class='content'>
+                        <img src="Images/Romantic.jpg" alt="RomanticBook">
+                        <div class="bookinfo">
+                            <div>This genre consists of a story man and a lady falling in love with each other and
+                                spending the rest of their lives together.</div>
+                            <a href="#categories">Click here to get best books of Romantic genre.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='books' id="genre-5">
+                    <h3>Science&Fiction</h3>
+                    <div class='content'>
+                        <img src="Images/Science.jpg" alt="ScienceBook">
+                        <div class="bookinfo">
+                            <div>Sci-fi novels take readers on adventures to faraway galaxies introducing them to other
+                                worldly characters and technologies along the way.</div>
+                            <a href="#categories">Click here to get the best books of Science&Fiction genre.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='books' id="genre-6">
+                    <h3>Historics</h3>
+                    <div class='content'>
+                        <img src="Images/Historics.jpg" alt="HistoricBook">
+                        <div class="bookinfo">
+                            <div>Historical fiction is a literary genre where the stories of the past,whether real or
+                                fictional are decribed.</div>
+                            <a href="#categories">Click here to get best books of Historic genre.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <div include-html="footer.html"></div>
+    <script src="include.js"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>
