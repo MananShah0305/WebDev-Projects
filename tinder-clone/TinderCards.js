@@ -5,23 +5,11 @@ import db from './firebase.js'
 
 function TinderCards() {
     const [people, setPeople] = useState([]);
-    //  const [names,setNames]=useState([])
     
     useEffect(() => {
-        db.collection('cards').onSnapshot((snapshot) => setPeople(snapshot.docs.map((doc) => doc.data())))//snapshot.docs will get us all the documents
+        db.collection('cards').onSnapshot((snapshot) => setPeople(snapshot.docs.map((doc) => doc.data())))
     }, [])
-    
-    //     const swiped=(direction,name)=>{
-    //     console.log('You swiped '+direction)
-    //     if(direction=='right'){
-    //         setNames([...names,{name:name}])
-    //         console.log(name)
-    //     }
-    //     else{
-    //         console.log('error')
-    //     }
-    //     console.log(names)
-    // }
+   
     const swiped=(direction)=>{
         console.log('You swiped '+direction)
     }
@@ -31,7 +19,6 @@ function TinderCards() {
     }
 
     return (
-        // <div className='tinderCards'>//Not a necessary div
         <div className="tinderCards__cardContainer">
             {people.map((person) => (
                 <TinderCard className='swipe' key={person.name} preventSwipe={['up','down']} onSwipe={swiped} onCardLeftScreen={() => outOfFrame(person.name)}>
@@ -41,11 +28,7 @@ function TinderCards() {
                 </TinderCard>
             ))}
         </div>
-        // </div>
-
-
     )
 }
 
-// export {names}
 export default TinderCards
