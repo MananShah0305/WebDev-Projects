@@ -32,10 +32,9 @@
     border-radius:16px;
     margin-left: auto;
     width: fit-content;
-     /*pushes it as right as possible*/
 }
 form{
-    display:flex;  /*we did display flex so that we could use flex:1 on the input tag*/
+    display:flex; 
     position:fixed;
     bottom:0px;
     height:32px;
