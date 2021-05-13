@@ -1,5 +1,4 @@
 .sidebar{
-    /* Width:35% is same as flex:0.35 */
     display: flex;
     flex:0.35;
     flex-direction: column;
