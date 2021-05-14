@@ -30,7 +30,6 @@ function Form() {
     }
 
     const resetList = () => {
-        // let removePara=document.getElementsByClassName('tagline')
         let removePara=document.createElement('P')
         removePara.className='tagline';
         removePara.innerText='Wish List Removed '+String.fromCodePoint(128546)
